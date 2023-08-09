@@ -1,11 +1,12 @@
 #include <stdio.h>
 /**
- * main Write a program that prints its name, followed by a new line.
- **/
-int main (int argc, char const *argv[])
+* main -  writes program name
+* @argc: arguement count
+* @argv: array of pointers to CLI arguement
+* Return: 0
+**/
+int main(int argc, char *argv[])
 {
-	(void)argc;
-	printf("%s\n",argv[0]);
-
-  return 0;
+	printf("%s\n", argv[argc - 1]);
+	return (0);
 }
